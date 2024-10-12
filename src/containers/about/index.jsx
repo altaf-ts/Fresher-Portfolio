@@ -3,36 +3,39 @@ import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
-import { DiApple, DiAndroid } from "react-icons/di";
-import { FaDev, FaDatabase } from "react-icons/fa";
+import { FaJava, FaReact, FaDatabase, FaCode } from "react-icons/fa";
+
 
 const personalDetails = [
   {
     label: "Name",
-    value: "John Doe",
+    value: "Altaf Shaikh",
   },
   {
     label: "Age",
-    value: "27",
+    value: "23",
   },
   {
     label: "Address",
-    value: "India",
+    value: "Pune, Maharashtra, India",
   },
   {
     label: "Email",
-    value: "demo@example.com",
+    value: "ashaikh20754@gmail.com",
   },
   {
     label: "Contact No",
-    value: "+11 3456789056",
+    value: "+91 7385274784",
   },
 ];
 
-const jobSummary =
-  "Seasoned and independent Front End Developer with 5 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design. It is imperative that you provide a thorough and professional approach to your resume. As a Front End Developer you will be judged by your ability to use UX and UI concepts and follow design guidelines. It is about expressing your attention to detail and how you can help implement design ideas for your future employer";
+const jobSummary = 
+  "I am a Java Developer passionate about creative problem-solving and delivering quality solutions. With hands-on experience in Java, SQL, and C++, I have a solid foundation in object-oriented programming. I graduated from MMIT Pune in 2024 and am eager to explore software and full-stack development.In addition to backend skills, I gained experience in web development through an internship, focusing on HTML, CSS, and JavaScript. I'm committed to continuous learning and excited about future opportunities. Technologies: C/C++, Java, SQL, MySQL, HTML, CSS, JavaScript."
 
-const About = () => {
+
+
+
+  const About = () => {
   return (
     <section id="about" className="about">
       <PageHeaderContent
@@ -93,19 +96,24 @@ const About = () => {
             }}
           >
             <div className="about__content__servicesWrapper__innerContent">
-              <div>
-                <FaDev size={60} color="var( --yellow-theme-main-color)" />
-              </div>
-              <div>
-                <DiAndroid size={60} color="var( --yellow-theme-main-color)" />
-              </div>
-              <div>
-                <FaDatabase size={60} color="var( --yellow-theme-main-color)" />
-              </div>
-              <div>
-                <DiApple size={60} color="var( --yellow-theme-main-color)" />
-              </div>
-            </div>
+  <div>
+    <FaJava size={60} color="var(--yellow-theme-main-color)" />
+    
+  </div>
+  <div>
+    <FaReact size={60} color="var(--yellow-theme-main-color)" />
+    
+  </div>
+  <div>
+    <FaDatabase size={60} color="var(--yellow-theme-main-color)" />
+    
+  </div>
+  <div>
+    <FaCode size={60} color="var(--yellow-theme-main-color)" />
+    
+  </div>
+</div>
+
           </Animate>
         </div>
       </div>

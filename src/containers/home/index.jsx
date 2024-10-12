@@ -14,9 +14,9 @@ const Home = () => {
     <section id="home" className="home">
       <div className="home__text-wrapper">
         <h1>
-          Hello, I'm John
+          Hello, I'm Altaf Shaikh
           <br />
-          Front end developer
+          Java Full Stack Developer
         </h1>
       </div>
       <Animate
@@ -31,8 +31,13 @@ const Home = () => {
         }}
       >
         <div className="home__contact-me">
-          <button onClick={handleNavigateToContactMePage}>Hire Me</button>
-        </div>
+  <button onClick={handleNavigateToContactMePage}>Hire Me</button>
+  
+  {/* Resume link to open in new tab */}
+  <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+    <button>Resume</button>
+  </a>
+</div>
       </Animate>
     </section>
   );
